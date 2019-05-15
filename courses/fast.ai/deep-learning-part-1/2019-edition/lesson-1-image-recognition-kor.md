@@ -1,6 +1,7 @@
 # Lesson 1 - Image Recognition
 
 _These are my personal notes from fast.ai Live (the new International Fellowship programme) course and will continue to be updated and improved if I find anything useful and relevant while I continue to review the course to study much more in-depth. Thanks for reading and happy learning!_
+_이것들은 fast.ai 라이브 (새로운 국제 펠로우쉽 프로그램) 코스의 내 개인적인 노트입니다. 그리고 만약 내가 훨씬 더 심층적으로 공부하기 위해 과정을 계속 검토하는 동안 유용하고 적절한 것을 발견한다면 계속해서 업데이트되고 개선될 것입니다. 독서와 행복한 배움에 감사드립니다!_
 
 Live date: 23 Oct 2018, GMT+8
 
