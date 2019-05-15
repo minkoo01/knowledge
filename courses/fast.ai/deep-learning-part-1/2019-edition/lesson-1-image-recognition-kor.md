@@ -105,13 +105,13 @@ How to use notebooks and the materials well based on the last three years of exp
 
 1. Just watch a lesson end to end.
    - Don't try to follow along because it's not really designed to go the speed where you can follow along. It's designed to be something where you just take in the information, you get a general sense of all the pieces, how it all fits together. <br>
-   `- 따라갈 수 있는 속도를 따라갈 수 있도록 설계되어 있지 않기 때문에 따라가려고 하지 마십시오. 그것은 여러분이 정보를 얻고, 모든 조각들에 대한 일반적인 감각을 얻으며, 어떻게 모든 것이 서로 맞는지 알기 위해 고안된 것입니다.`
+   `따라갈 수 있는 속도를 따라갈 수 있도록 설계되어 있지 않기 때문에 따라가려고 하지 마십시오. 그것은 여러분이 정보를 얻고, 모든 조각들에 대한 일반적인 감각을 얻으며, 어떻게 모든 것이 서로 맞는지 알기 위해 고안된 것입니다.`
    - Then you can go back and go through it more slowly pausing the video, trying things out, making sure that you can do the things that I'm doing and you can try and extend them to do things in your own way. <br>
-   `- 그리고 나서 여러분은 다시 돌아가서 더 천천히 비디오를 볼 수 있고, 무언가를 시도해 볼 수 있고, 여러분이 내가 하고 있는 일을 할 수 있고, 여러분만의 방식으로 그것들을 확장해 볼 수 있도록 할 수 있습니다.`
+   `그리고 나서 여러분은 다시 돌아가서 더 천천히 비디오를 볼 수 있고, 무언가를 시도해 볼 수 있고, 여러분이 내가 하고 있는 일을 할 수 있고, 여러분만의 방식으로 그것들을 확장해 볼 수 있도록 할 수 있습니다.`
    - Don't worry if things are zipping along faster than you can do them. That's normal. <br>
-   `- 일이 당신이 할 수 있는 것보다 더 빨리 진행되고 있는지 걱정하지 마세요. 그런 건 보통이에요.`
-   - Don't try and stop and understand everything the first time. If you do understand everything the first time, good for you. But most people don't particularly as the lessons go on, they get faster and they get more difficult.
-   `- 처음에 모든 것을 멈추고 이해하려고 하지 마라. 만약 네가 처음 모든 것을 이해한다면, 너에게 좋다. 그러나 대부분의 사람들은 특히 수업이 진행될수록 더 빨라지고 더 어려워진다.`
+   `일이 당신이 할 수 있는 것보다 더 빨리 진행되고 있는지 걱정하지 마세요. 그런 건 보통이에요.`
+   - Don't try and stop and understand everything the first time. If you do understand everything the first time, good for you. But most people don't particularly as the lessons go on, they get faster and they get more difficult. <br>
+   `처음에 모든 것을 멈추고 이해하려고 하지 마라. 만약 네가 처음 모든 것을 이해한다면, 너에게 좋다. 그러나 대부분의 사람들은 특히 수업이 진행될수록 더 빨라지고 더 어려워진다.`
 
 So at this point, we've got our notebooks going. We're ready to start doing deep learning.
 
