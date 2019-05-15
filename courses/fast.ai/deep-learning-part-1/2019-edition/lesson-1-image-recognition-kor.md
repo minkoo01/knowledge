@@ -162,14 +162,21 @@ This lesson breaks down the previously held myths about Deep Learning and AI whi
 
 ![](../../../../images/fastai_p1_v3/lesson_1/5.png)
 
-You will probably hear a lot of naysayers, less now than a couple of years ago than we started. A lot of them telling you that you can't do it or you shouldn't be doing it or that deep learning got all these problems. It's not perfect. These are all things that people claim about, which are either pointless or untrue.
+You will probably hear a lot of naysayers, less now than a couple of years ago than we started. A lot of them telling you that you can't do it or you shouldn't be doing it or that deep learning got all these problems. It's not perfect. These are all things that people claim about, which are either pointless or untrue. <br>
+`당신은 아마도 우리가 시작한지 2년도 안된 지금 많은 비관론자들의 말을 들을 것이다. 그들 중 많은 사람들이 여러분이 그것을 할 수 없거나, 그것을 해서는 안 된다거나, deep learning이 이러한 모든 문제들을 가지고 있다고 말한다. 맞지 않는 말입니다. 사람들이 주장하는 모든 것들이 무의미하거나 사실이 아니야.`
 
-- It's not a black box. It's really great for interpreting what's going on.
-- It does not need much data for most practical applications.
-- You don't need a PhD. Rachel has one so it doesn't actually stop you from doing deep learning if you have a PhD.
-- It can be used very widely for lots of different applications, not just for vision.
-- You don't need lots of hardware. 36 cents an hour server is more than enough to get world-class results for most problems.
-- It is true that maybe this is not going to help you build a sentient brain, but that's not our focus. For all the people who say deep learning is not interesting because it's not really AI, not really a conversation that Jeremy interested in. We are focused on solving interesting real-world problems.
+- It's not a black box. It's really great for interpreting what's going on. <br>
+` 블랙박스가 아니다. 무슨 일이 일어나고 있는지 해석하는 것은 정말 훌륭하다.`
+- It does not need much data for most practical applications. <br>
+`대부분의 실용적 용도에 많은 데이터가 필요하지 않다.`
+- You don't need a PhD. Rachel has one so it doesn't actually stop you from doing deep learning if you have a PhD. <br>
+`박사학위는 필요 없다. Rachel이 박사학위를 가지있다고 해서 실제로 여러분이 deep learning을 하는 것을 막지 못한다.`
+- It can be used very widely for lots of different applications, not just for vision. <br>
+`비전뿐만 아니라 다양한 애플리케이션에 매우 광범위하게 사용할 수 있다.`
+- You don't need lots of hardware. 36 cents an hour server is more than enough to get world-class results for most problems. <br>
+`하드웨어가 많이 필요하지 않다. 시간당 36센트는 대부분의 문제에서 세계적인 수준의 결과를 얻기에 충분하다.`
+- It is true that maybe this is not going to help you build a sentient brain, but that's not our focus. For all the people who say deep learning is not interesting because it's not really AI, not really a conversation that Jeremy interested in. We are focused on solving interesting real-world problems. <br>
+` 어쩌면 이것이 지각 있는 뇌를 만드는 데 도움이 되지 않을 수도 있다는 것은 사실이지만, 그것은 우리의 초점은 아니다. deep learning은 진짜 AI가 아니라고 하는 모든 사람들의 대화에 대해서 Jeremy는 사실 관심이 없다. 우리는 흥미로운 현실 문제를 해결하는 데 초점을 맞추고 있다.`
 
 ### What are you going to be able to do by the end of lesson 1 [[10:24](https://youtu.be/BWWm4AzsdLk?t=624)]
 
@@ -183,7 +190,8 @@ Cricket vs Baseball - an example by Nikhil of what you are going to be able to d
 
 **You will learn how it works before you learn why it works.**
 
-We are going to start by looking at code which is different to many of academic courses. We are going to learn to build a useful thing today. That means that at the end of today, you won't know all the theory. There will be lots of aspects of what we do that you don't know why or how it works. That's okay! You will learn why and how it works over the next 7 weeks. But for now, we've found that what works really well is to actually get your hands dirty coding—not focusing on theory. Because, it's still a situation where people who are good practitioners have a really good feel for how to work with code and how to work with data and you can only get that through experience. The best way to get that feel of how to get good models is to create lots of models through lots of coding and study them carefully. So, let's try that, let's try getting started.
+We are going to start by looking at code which is different to many of academic courses. We are going to learn to build a useful thing today. That means that at the end of today, you won't know all the theory. There will be lots of aspects of what we do that you don't know why or how it works. That's okay! You will learn why and how it works over the next 7 weeks. But for now, we've found that what works really well is to actually get your hands dirty coding—not focusing on theory. Because, it's still a situation where people who are good practitioners have a really good feel for how to work with code and how to work with data and you can only get that through experience. The best way to get that feel of how to get good models is to create lots of models through lots of coding and study them carefully. So, let's try that, let's try getting started. <br>
+`우리는 많은 대학 수업과는 다르게 코드부터 살펴보려고 한다. 우리는 오늘 유용한 것을 만드는 것을 배울 것이다. 그것은 오늘 말미에 당신이 모든 이론을 알 수 없다는 것을 의미한다. 우리가 하는 일에는 왜 그러는지 어떻게 작동하는지 모르는 많은 측면이 있을 것이다. 괜찮다! 7주 동안 왜 그리고 어떻게 작동하는지 알게 될 것이다. 하지만 현재로서는 이론에 초점을 맞추지 않고 실제로 직접 코딩을 하는 것이 효과적이라는 것을 알아냈다. 왜냐하면, 그것은 여전히 훌륭한 실무자인 사람들이 어떻게 코드로 일하는지 그리고 어떻게 데이터를 가지고 일하는지에 대해 정말로 좋은 느낌을 가지고 있는 상황이고 당신은 오직 경험을 통해서만 그것을 얻을 수 있기 때문이다. 좋은 모델을 얻는 방법에 대한 느낌을 얻는 가장 좋은 방법은 많은 코딩을 통해 많은 모델을 만들고 그것들을 주의 깊게 연구하는 것이다. 자, 시작해 봅시다.`
 
 ## What's your pet [[12:26](https://youtu.be/BWWm4AzsdLk?t=746)]
 
@@ -203,9 +211,13 @@ These three lines is what we start every notebook with:
 %matplotlib inline
 ```
 
-These things starting `%` are special directives to Jupyter Notebook itself, they are not Python code. They are called "magics". The details aren't very important but basically it says:
-- If somebody changes underlying library code while I'm running this, please reload it automatically.
-- If somebody asks to plot something, then please plot it here in this Jupyter Notebook.
+These things starting `%` are special directives to Jupyter Notebook itself, they are not Python code. They are called "magics". The details aren't very important but basically it says: <br>
+`%를 시작하는 것들은 Jupyter Notebook 자체에 대한 특별한 명령이지 파이선 코드는 아니다. 그들은 "마법들"이라고 불린다. 자세한 내용은 그다지 중요하지 않지만 기본적으로 다음과 같이 말하고 있다.`
+- If somebody changes underlying library code while I'm running this, please reload it automatically. <br>
+`이 작업을 실행하는 동안 기본 라이브러리 코드를 변경한 경우 자동으로 다시 로드하십시오.`
+- If somebody asks to plot something, then please plot it here in this Jupyter Notebook. <br>
+`만약 누군가가 뭔가 뭔가를 그리라고 한다면, 여기 Jupyter Notebook에 그것을 그려주십시오.`
+
 
 [[14:00](https://youtu.be/BWWm4AzsdLk?t=840)] The next two lines load up the fastai library:
 
@@ -319,13 +331,16 @@ path = untar_data(URLs.PETS); path
 PosixPath('/data1/jhoward/git/course-v3/nbs/dl1/data/oxford-iiit-pet')
 ```
 
-In Jupyter Notebook, you can just write a variable on its own (semicolon is just an end of statement in Python) and it prints it. You can also say `print(path)` but again, we are trying to do everything fast and interactively, so just write it and here is the path where it's given us our data.
+In Jupyter Notebook, you can just write a variable on its own (semicolon is just an end of statement in Python) and it prints it. You can also say `print(path)` but again, we are trying to do everything fast and interactively, so just write it and here is the path where it's given us our data. <br>
+`Jupyter Notebook에서는 변수를 그 자체만으로 쓸 수 있다(세미콜론은 python에서 문장의 끝을 의미한다). 그리고 그것을 print한다. 'print(path)'라고 말할 수도 있지만, 다시 말해 우리는 모든 것을 빠르고 상호적으로 하려고 노력하고 있으니, 그냥 작성하고 이것이 우리의 데이터를 담고 있는 경로이다.`
 
-Next time you run this, since you've already downloaded it, it won't download it again. Since you've already untared it, it won't untar it again. So everything is designed to be pretty automatic and easy.
+Next time you run this, since you've already downloaded it, it won't download it again. Since you've already untared it, it won't untar it again. So everything is designed to be pretty automatic and easy. <br>
+`다음에 이걸 실행하면, 이미 다운받았기 때문에, 다시 다운로드를 하지 않는다. 여러분이 이미 압축을 해제 했으니, 그것은 다시 압축해제하지 않을 것이다. 그래서 모든 것은 꽤 자동적이고 쉽게 설계되어 있다.`
 
 [[23:50](https://youtu.be/BWWm4AzsdLk?t=1430)]
 
-There are some things in Python that are less convenient for interactive use than they should be. For example, when you do have a path object, seeing what's in it actually takes a lot more typing than I would like. So sometimes we add functionality into existing Python stuff. One of the things we do is add a `ls()` method to path.
+There are some things in Python that are less convenient for interactive use than they should be. For example, when you do have a path object, seeing what's in it actually takes a lot more typing than I would like. So sometimes we add functionality into existing Python stuff. One of the things we do is add a `ls()` method to path. <br>
+`Python에는 대화형 사용이 필요 이상으로 편리하지 않은 것들이 있다. 예를 들어, 여러분이 경로 객체를 가지고 있을 때, 그 안에 있는 것을 보는 것은 실제로 내가 원하는 것보다 훨씬 더 많은 타이핑을 필요로 한다. 그래서 때때로 우리는 기존의 python 물건에 기능성을 추가한다. 우리가 하는 일 중 하나는 'ls()' 를 path에 추가하는 것이다.`
 
 ```python
 path.ls()
@@ -337,6 +352,7 @@ path.ls()
 ```
 
 These are what's inside this path, so that's what we just downloaded.
+`방금 우리가 다운로드한 것들이 이 경로 안에 있다.`
 
 ### Python 3 pathlib [[24:25](https://youtu.be/BWWm4AzsdLk?t=1465)]
 
@@ -346,6 +362,7 @@ path_img = path/'images'
 ```
 
 If you are an experienced Python programmer, you may not be familiar with this approach of using a slash like this. This is a really convenient function that's part of Python 3. It's functionality from [pathlib](https://docs.python.org/3/library/pathlib.html). Path object is much better to use than strings. They let you use basically create sub paths like this. It doesn't matter if you're on Windows, Linux, or Mac. It is always going to work exactly the same way. `path_img` is the path to the images in that dataset.
+`만약 당신이 경험이 풍부한 파이썬 프로그래머라면, 당신은 이런 슬래시를 사용하는 이 접근법에 익숙하지 않을 것이다. 이것은 파이톤 3의 일부분인 정말 편리한 기능이다. 그것은 [pathlib](https://docs.python.org/3/library/pathlib.html).에서 제공하는 기능이다. Path 객체가 문자열보다 훨씬 낫다. 이렇게 기본적으로 하위 경로를 만들 수 있는 겁니다. 당신이 Windows, Linux, Mac에 있든 상관없다. 그것은 항상 정확히 같은 방식으로 작동될 것이다. path_img는 해당 데이터 세트에 있는 이미지의 경로다.`
 
 [[24:57](https://youtu.be/BWWm4AzsdLk?t=1497)]
 
@@ -792,42 +809,54 @@ These pictures come from [a fantastic paper](https://cs.nyu.edu/~fergus/papers/z
 ![](../../../../images/fastai_p1_v3/lesson_1/124.png)
 
 Here are nine examples of the actual coefficients from the first layer. So these operate on groups of pixels that are next to each other. So this first one basically finds groups of pixels that have a little diagonal line, the second one finds diagonal line in the other direction, the third one finds gradients that go from yellow to blue, and so forth. They are very simple little filters. That's layer one of ImageNet pre-trained convolutional neural net.
+<br>`다음은 첫 번째 층의 실제 계수의 9가지 예제 입니다. 그래서 이것들은 서로 옆에 있는 픽셀 그룹으로 작동한다. 첫번째는 기본적으로 약간 대각선을 가진 픽셀 그룹을 찾고, 두번째는 다른 방향에서 대각선을 찾고, 세번째는 노란색에서 파란색으로 가는 gradient를 찾는 겁니다. 그것들은 아주 간단한 작은 필터들이다. 이건 ImageNet의 사전 훈련된 convolutional 신경망 중 하나이다.`
 
 ![](../../../../images/fastai_p1_v3/lesson_1/125.png)
 
 Layer 2 takes the results of those filters and does a second layer of computation. The bottom right are nine examples of a way of visualizing one of the second layer features. AS you can see, it basically learned to create something that looks for top left corners. There are ones that learned to find right-hand curves, and little circles, etc. In layer one, we have things that can find just one line, and in layer 2, we can find things that have two lines joined up or one line repeated. If you then look over to the right, these nine show you nine examples of actual bits of the actual photos that activated this filter a lot. So in other words, the filter on the bottom right was good at finding these window corners etc.
+<br>`Layer 2는 이러한 필터의 결과를 취하여 두 번째 layer를 계산한다. 오른쪽 아래는 두 번째 layer 특징 중 하나를 시각화하는 방법의 9가지 예들이다. 보시다시피, 왼쪽 위 모서리를 찾는 것을 기본적으로 배웠다. 오른쪽 곡선, 작은 원 등을 찾는 법을 배운 것이 있다. layer 1 에는 한 줄만 찾을 수 있는 것들이 있고, layer 2 에는 두 줄이 연결되어 있거나 한 줄이 반복되어 있는 것들을 발견할 수 있다. 오른쪽을 보시면, 이 9개의 사진은 실제 사진의 9개의 예를 볼 수 있는데, 이 필터를 많이 활성화시킨 겁니다. 즉, 오른쪽 하단의 필터는 이러한 창구석 등을 잘 찾아냈던 것이다.`
 
 So this is the kind of stuff you've got to get a really good intuitive understanding for. The start of my neural net is going to find very simple gradients and lines, the second layer can find very simple shapes, the third layer can find  combination of those.
+<br>`이것은 여러분이 정말 좋은 직관적인 이해를 얻어야 하는 것 입니다. 나의 신경망의 시작은 매우 단순한 구배와 선을 찾을 것이고, 두 번째 layer은 매우 단순한 모양을 찾을 수 있을 것이고, 세 번째 layer은 그것들의 조합을 찾을 수 있을 것이다.`
 
 ![](../../../../images/fastai_p1_v3/lesson_1/126.png)
 
 Now we can find repeating pattern of two dimensional objects or we can find things that joins together, or bits of text (although sometimes windows) - so it seems to find repeated horizontal patterns. There are also ones that seem to find edges of fluffy or flowery things or geometric patterns. So layer 3 was able to take all the stuff from layer 2 and combine them together.
+<br>`이제 우리는 2차원 물체의 반복적인 패턴을 찾을 수 있고, 함께 결합되는 사물이나 텍스트의 일부(때로는 창도 있지만)를 찾을 수 있어 반복적인 수평 패턴을 찾을 수 있는 것처럼 보인다. 솜털이나 꽃무늬의 가장자리나 기하학적 무늬를 찾아내는 듯한 것도 있다. 그래서 세번째 레이어은 두번째 레이어으로부터 모든 물질들을 가져다가 결합시킬 수 있었다.`
 
 ![](../../../../images/fastai_p1_v3/lesson_1/127.png)
 
 Layer 4 can take all the stuff from layer 3 and combine them together. By layer 4, we got something that can find dog faces or bird legs.
+<br>`Layer 4는 layer 3의 모든 물질을 취해서 결합시킬 수 있다. layer 4에는 개 얼굴이나 새 다리를 찾을 수 있는 무언가가 있다.`
 
 By layer 5, we've got something that can find the eyeballs of bird and lizards, or faces of particular breeds of dogs and so forth. So you can see how by the time you get to layer 34, you can find specific dog breeds and cat breeds. This is kind of how it works.
+<br>`layer 5에는 새와 도마뱀의 눈알이나 특정 종의 개들의 얼굴을 찾을 수 있는 무언가가 있다. layer 34에 이르면 특정 개 품종과 고양이 품종을 찾을 수 있는 방법을 알 수 있다. 이런 식으로 되는 겁니다.`
 
 So when we first trained (i.e. fine-tuned) the pre-trained model, we kept all of these layers that you've seen so far and we just trained a few more layers on top of all of those sophisticated features that are already being created. So now we are going back and saying "let's change all of these". We will start with where they are, but let's see if we can make them better.
+<br>`그래서 우리가 처음 pre-trained 모델을 학습시켰을 때(즉, fine-tuned) 지금까지 보셨던 모든 layer을 유지했고, 이미 만들어지고 있는 모든 정교한 특징들 위에 몇 개의 layer를 더 훈련시켰을 뿐이었습니다. 그래서 이제 우리는 돌아가서 "이 모든 것을 바꾸자"고 말할 것이다. 우리는 그들이 어디에 있는지부터 시작할 것이다. 하지만 우리가 그들을 더 낫게 만들 수 있는지 보자.`
 
 Now, it seems very unlikely that we can make layer 1 features better. It's very unlikely that the definition of a diagonal line is going to be different when we look at dog and cat breeds versus the ImageNet data that this was originally trained on. So we don't really want to change the layer 1 very much if at all. Or else, the last layers, like types of dog face seems very likely that we do want to change that. So **you want this intuition, this understanding that the different layers of a neural network represents different level of semantic complexity**.
+<br>`이제, 우리가 layer 1 특징을 더 잘 만들 수 있을 것 같지는 않다. 우리가 개와 고양이 품종을 볼 때 대각선 선의 정의는 원래 훈련되었던 ImageNet 데이터와 다를 것 같지 않다. 그래서 우리는 정말로 layer 1을 아주 많이 바꾸고 싶지 않다. 아니면, 마지막 layer는, 개 얼굴 형태와 같은, 우리가 그것을 바꾸고 싶어할 가능성이 매우 높아 보인다. 그래서 여러분은 이 직관을 원하시겠죠, 신경망의 다른 layer가 다른 의미적 복잡성의 수준을 나타낸다는 것을 이해하시겠죠`
 
 [[1:22:06](https://youtu.be/BWWm4AzsdLk?t=4926)]
 
 This is why our attempt to fine-tune this model didn't work because by default, it trains all the layers at the same speed which is to say it will update those things representing diagonal lines and gradients just as much as it tries to update the things that represent the exact specifics of what an eyeball looks like, so we have to change that.
+<br>`이것이 우리가 이 모델을 fine-tune하려는 시도가 효과가 없었던 이유인데, 왜냐하면 그것은 기본적으로 모든 층을 동일한 속도로 훈련하기 때문인데, 그것은 눈알이 어떻게 보이는지 정확하게 나타내는 것들을 업데이트하려는 것만큼 대각선이나 구배를 나타내는 것들을 업데이트할 것이기 때문이다. 그래서 우리는 그것을 바꿔야 한다.`
 
 To change it, we first of all need to go back to where we were before. We just broke this model, much worse than it started out. So if we just go:
+<br>`그것을 바꾸기 위해서는 무엇보다도 우리가 전에 있던 곳으로 돌아가야 한다. 우리는 이 모델을 막 부숴버렸어. 시작했던 것보다 훨씬 더 안 좋아. 그래서 만약 우리가 그냥 간다면:`
 
 ```python
 learn.load('stage-1')
 ```
 
 This brings back the model that we saved earlier. So let's load that back up and now our models back to where it was before we killed it.
+<br>`이것은 우리가 이전에 저장했던 model로 되돌려 준다. 그럼 그걸 다시 올려서 우리가 죽이기 전에 원래 있던 곳으로 model을 되돌려 놓자.`
 
 ### Learning rate finder [[1:22:58](https://youtu.be/BWWm4AzsdLk?t=4978)]
 
 Let's run learning rate finder. We are learning about what that is next week, but for now, just know this is the thing that figures out what is the fastest I can train this neural network at without making it zip off the rails and get blown apart.
+<br>`learning rate 검색기를 실행해 봅시다. 우리는 그것이 다음 주에 무엇인지 알아 볼건데, 지금으로서는, 이것이 내가 이 신경망을 레일에서 지퍼를 내리고 산산조각이 나지 않도록 훈련할 수 있는 가장 빠른 값을 알아내는 것이다.`
 
 ```python
 learn.lr_find()
@@ -837,6 +866,7 @@ learn.recorder.plot()
 ![](../../../../images/fastai_p1_v3/lesson_1/11.png)
 
 This will plot the result of our LR finder and what this basically shows you is this key parameter called a learning rate. The **learning rate basically says how quickly am I updating the parameters in my model**. The x-axis one here shows me what happens as I increase the learning rate. The y axis show what the loss is. So you can see, once the learning rate gets passed 10^-4, my loss gets worse. It actually so happens, in fact I can check this if I press <kbd>shift</kbd>+<kbd>tab</kbd> here, my learning defaults to 0.003. So you can see why our loss got worse. Because we are trying to fine-tune things now, we can't use such a high learning rate. So based on the learning rate finder, I tried to pick something well before it started getting worse. So I decided to pick `1e-6`. But there's no point training all the layers at that rate, because we know that the later layers worked just fine before when we were training much more quickly. So what we can actually do is we can pass a range of learning rates to `learn.fit_one_cycle`. And we do it like this:
+<br>`이것은 우리의 LR 검색기의 결과를 나타낼 것이고 기본적으로 당신에게 보여지는 것은 learning rate라고 불리는 이 핵심 파라미터다. **learning rate는 기본적으로 내 모델의 매개변수를 얼마나 신속히 업데이트하고 있는지 알려준다**. 여기 x축은 learning rate를 증가시킬 때 어떤 일이 일어나는지 보여 준다. Y축은 loss가 무엇인지 보여준다. 그러니까, 일단 학습률이 10^-4를 넘으면, 손실은 더 심해진다. 실제로 그렇게 되는데, 사실 여기서 <kbd>shift </kbd>+<kbd>tab </kbd>를 누르면 나의 학습은 0.003으로 기본이 된다. 그래서 우리의 손실이 왜 더 심해졌는지를 알 수 있다. 우리는 지금 사물을 미세 조정하려고 하기 때문에, 그렇게 높은 learning rate를 사용할 수 없다. 그래서 learning rate 검색기를 바탕으로, 나는 그것이 더 악화되기 전에 무언가를 고르려고 노력했다. 그래서 '1e-6'을 뽑기로 했다. 하지만 그런 속도로 모든 layer들을 훈련시키는 것은 무의미하다. 왜냐하면 우리가 훨씬 더 빨리 훈련을 할 때 그 이전 레이어들이 잘 작동한다는 것을 알기 때문이다. 그래서 우리가 실제로 할 수 있는 것은 다양한 learning rate를 'learn.fit_one_cycle' 에 전달할 수 있는 것이다. 이런 식으로 말이다.`
 
 ```python
 learn.unfreeze()
@@ -852,20 +882,25 @@ epoch  train_loss  valid_loss  error_rate
 ```
 
 You use this keyword in Python called `slice` and that can take a start value and a stop value and basically what this says is train the very first layers at a learning rate of 1e-6, and the very last layers at a rate of 1e-4, and distribute all the other layers across that (i.e. between those two values equally).
+<br>`당신은 'slice'라고 불리는 python에서 이 키워드를 사용하며, 그것은 시작 값과 정지 값을 취할 수 있으며, 기본적으로 이것이 말하는 것은 1e-6의 learning rate로 첫 번째 layer를 훈련시키고, 1e-4의 속도로 마지막 layer을 훈련시키고, 다른 모든 layer을 그 전체로 분배하는 것이다(즉, 두 개의 값 사이에서 똑같이).`
 
 ### How to pick learning rates after unfreezing [[1:25:23](https://youtu.be/BWWm4AzsdLk?t=5123)]
 
 A **good rule of thumb is after you unfreeze** (i.e. train the whole thing), pass a max learning rate parameter, pass it a slice, make the second part of that slice about 10 times smaller than your first stage. Our first stage defaulted to about 1e-3 so it's about 1e-4. And the first part of the slice should be a value from your learning rate finder which is well before things started getting worse. So you can see things are starting to get worse maybe about here:
+<br>`**즉, 모든 것을 훈련시키고, 최대 학습 속도 파라미터를 통과시켜 슬라이스의 두 번째 부분을 첫 번째 단계보다 약 10배 작게 만드는 것이 엄지손가락의 좋은 규칙이다. 우리의 첫 번째 stage는 약 1e-3으로 디폴트되어 약 1e-4이다. 그리고 이 slice의 첫 부분은 상황이 악화되기 훨씬 전에 당신의 learning rate 검색기에서 얻은 가치여야 한다. 상황이 더 나빠지기 시작했다는 걸 알 수 있을 겁니다`
 
 ![](../../../../images/fastai_p1_v3/lesson_1/128.png)
 
 So I picked something that's at least 10 times smaller than that.
+<br>`그래서 그것보다 최소 10배는 작은 것을 골랐다.`
 
 If I do that, then the error rate gets a bit better. So I would perhaps say for most people most of the time, these two stages are enough to get pretty much a world-class model. You won't win a Kaggle competition, particularly because now a lot of fastai alumni are competing on Kaggle and this is the first thing that they do. But in practice, you'll get something that's about as good in practice as the vast majority of practitioners can do.
+<br>`그렇게 하면 오류율이 좀 좋아진다. 그래서 아마 대부분의 사람들에게 이 두 단계는 세계 수준의 모델을 얻기에 충분하다고 말할 수 있을 겁니다. 당신은 Kaggle 대회에서 우승하지 못할 것이다. 특히 지금은 많은 fastai 동문들이 Kaggle에서 경쟁하고 있고 이것이 그들이 하는 첫 번째 일이기 때문이다. 그러나 실제로 당신은 대다수의 실무자들이 할 수 있는 것만큼 좋은 것을 얻게 될 것이다.`
 
 ## ResNet50 [[1:26:55](https://youtu.be/BWWm4AzsdLk?t=5215)]
 
 We can improve it by using more layers and we will do this next week but by basically doing a ResNet50 instead of ResNet34. And you can try running this during the week if you want to. You'll see it's exactly the same as before, but I'm using ResNet50.
+<br>`우리는 더 많은 layer를 사용함으로써 그것을 개선할 수 있고 우리는 다음 주에 이것을 할 것이다. 그러나 기본적으로 ResNet34 대신 ResNet50을 한다. 그리고 네가 원한다면 일주일 동안 이것을 실행해 볼 수 있다. 이전과 똑같아 보이겠지만, 나는 ResNet50을 사용하고 있다.`
 
 ```python
 data = ImageDataBunch.from_name_re(path_img, fnames, pat, ds_tfms=get_transforms(), size=320, bs=bs//2)
@@ -877,10 +912,13 @@ learn = ConvLearner(data, models.resnet50, metrics=error_rate)
 ```
 
 What you'll find is it's very likely if you try to do this, you will get an error and the error will be your GPU has ran out of memory. The reason for that is that ResNet50 is bigger than ResNet34, and therefore, it has more parameters and use more of your graphics card memory, just totally separate to your normal computer RAM, this is GPU RAM. If you're using the default Salamander, AWS, and so forth, then you'll be having a 16G of GPU memory. The card I use most of the time has 11G GPU memory, the cheaper ones have 8G. That's kind of the main range you tend to get. If yours have less than 8G of GPU memory, it's going to be frustrating for you.
+<br>`여러분이 발견하게 될 것은 만약 여러분이 이것을 하려고 한다면, 여러분은 오류를 얻게 될 것이고, 오류는 여러분의 GPU의 메모리가 부족하게 될 것이라는 것이다. 그 이유는 ResNet50이 ResNet34보다 더 크기 때문이다. 따라서, 그것은 더 많은 파라미터를 가지고 있고 그래픽 카드 메모리를 더 많이 사용하기 때문이다. 단지 당신의 일반적인 컴퓨터 RAM과 완전히 분리되어 있다. 이것은 GPU RAM이다. 기본 Salamander, AWS 등을 사용하고 있다면 16G의 GPU 메모리를 갖게 될 겁니다. 내가 대부분의 시간을 사용하는 카드는 11G GPU 메모리를 가지고 있고, 더 싼 카드는 8G를 가지고 있다. 그게 네가 얻는 주요 범위야. 만약 당신의 GPU 메모리가 8G 미만이면, 그것은 당신에게 좌절감을 줄 것이다.`
 
 It's very likely that if you try to run this, you'll get an out of memory error and that's because it's just trying to do too much - too many parameter updates for the amount of RAM you have. That's easily fixed. `ImageDataBunch` constructor has a parameter at the end `bs` - a batch size. This basically says how many images do you train at one time. If you run out of memory, just make it smaller.
+<br>`이것을 실행하려고 하면 메모리 부족 오류가 발생할 가능성이 매우 높고, 그것은 당신이 가지고 있는 RAM의 양에 비해 너무 많은 매개 변수 업데이트를 너무 많이 하려고 하기 때문이다. 그것은 쉽게 고쳐진다. ImageDataBunch의 생성자는 배치 크기인 'bs'라는 파라미터를 가지고 있다. 이것은 기본적으로 한번에 얼마나 많은 이미지들을 훈련시키는지 말해준다. 메모리가 부족하면 이 값을 줄인다.`
 
 It's fine to use a smaller batch size. It might take a little bit longer. That's all. So that's just one number you'll need to try during the week.
+<br>`더 작은 batch size로 사용해도 좋다. 조금 더 걸릴 수도 있다. 그게 다야. 그러니까 한 주 동안 시도해 봐야 할 숫자야.`
 
 ```python
 learn.fit_one_cycle(8, max_lr=slice(1e-3))
@@ -901,6 +939,7 @@ epoch  train_loss  valid_loss  error_rate
 ```
 
 Again, we fit it for a while and we get down to 4.2% error rate. So this is pretty extraordinary. I was pretty surprised because when we first did in the first course, this cats vs. dogs, we were getting somewhere around 3% error for something where you've got a 50% chance of being right and the two things look totally different. So the fact that we can get 4.2% error for such a fine grain thing, it's quite extraordinary.
+<br>`다시 한 번 말씀드리지만, 우리는 그것을 잠시 맞추고 4.2%의 오류율을 얻는다. 그래서 이것은 매우 특별하다. 나는 꽤 놀랐어. 왜냐하면 우리가 처음 첫번째 코스에서 이 고양이들과 개들을 상대로 했을 때, 우리는 약 3%의 오류를 범하고 있었는데, 그것은 당신이 옳을 확률은 50%이고 두 가지는 완전히 다르게 생겼기 때문이야. 그래서 이렇게 미세한 곡물에 대해서 4.2%의 오차를 얻을 수 있다는 것은 상당히 이례적이다.`
 
 ### Interpreting the results again [[1:29:41](https://youtu.be/BWWm4AzsdLk?t=5381)]
 
@@ -919,14 +958,17 @@ interp.most_confused(min_val=2)
 ```
 
 You can call the most_confused here and you can see the kinds of things that it's getting wrong. Depending on when you run it, you're going to get slightly different numbers, but you'll get roughly the same kind of things. So quite often, I find the Ragdoll and Birman are things that it gets confused. I actually have never heard of either of those things, so I actually looked them up and found a page on the cat site called "Is this a Birman or Ragdoll kitten?" and there was a long thread of cat experts arguing intensely about which it is. So I feel fine that my computer had problems. :laughing::laughing::laughing:
+<br>`당신은 여기서 가장 혼란스러운 것을 부를 수 있고 당신은 그것이 잘못되고 있는 종류의 것들을 볼 수 있다. 언제 실행하느냐에 따라 조금씩 다른 숫자가 나오겠지만 대략 같은 종류의 것들이 나올 겁니다. 꽤 자주, 나는 Ragdoll과 Birman이 혼란스러운 것이라는 것을 발견한다. 나는 실제로 그런 것들에 대해 들어본 적이 없어서 실제로 그것들을 찾아봤더니 고양이 사이트에서 "이게 비르만인가 라그돌 새끼인가?"라는 페이지를 찾았는데, 고양이 전문가들이 어떤 것인지 격렬하게 논쟁을 벌이는 긴 실마리가 있었다. 그래서 나는 내 컴퓨터에 문제가 있어서 기분이 좋다.`
 
 ![](../../../../images/fastai_p1_v3/lesson_1/129.png)
 
 I found something similar, I think it was this pitbull versus staffordshire bull terrier, apparently the main difference is the particular kennel club guidelines as to how they are assessed. But some people think that one of them might have a slightly redder nose. So this is the kind of stuff where actually even if you're not a domain expert, it helps you become one. Because I now know more about which kinds of pet breeds are hard to identify than I used to. So model interpretation works both ways.
+<br>`나는 비슷한 것을 발견했는데, 나는 이 핏불 대 스태포드셔의 불테리어라고 생각한다. 분명히 주된 차이점은 그들이 어떻게 평가되는지에 대한 특별한 협회의 지침이다. 하지만 어떤 사람들은 그들 중 한 명이 약간 더 빨간 코를 가지고 있을 수도 있다고 생각한다. 이런 종류의 것들은 여러분이 도메인 전문가가 아니더라도 여러분이 하나가 되는 데 도움이 되는 겁니다. 왜냐하면 나는 이제 예전에 비해 어떤 종류의 애완동물을 식별하기 어려운지 더 많이 알고 있기 때문이다. 따라서 모델 해석은 두 가지 방식으로 모두 작용한다.`
 
 ## Homework [[1:30:58](https://youtu.be/BWWm4AzsdLk?t=5458)]
 
 So what I want you to do this week is to run this notebook, make sure you can get through it, but then I really want you to do is to get your own image dataset and actually Francisco who is now helping to TA the course is putting together a guide that will show you how to download data from Google Images so you can create your own dataset to play with. But before I do, I want to show you how to create labels in lots of different ways because your dataset where you get it from won't necessarily be that kind of regex based approach. It could be in lots of different formats. So to show you how to do this, I'm going to use the MNIST sample. MNIST is a picture of hand drawn numbers - just because I want to show you different ways of creating these datasets.
+<br>`그래서 이번 주에 여러분이 이 notebook을 실행하고, 여러분이 이 notebook을 사용할 수 있도록 확실히 해 두었으면 합니다만, 저는 여러분이 정말로 하고 싶은 것은 여러분만의 이미지 데이터셋을 얻는 것입니다, 그리고 지금 TA 과정을 돕고 있는 프란시스코는 여러분이 구글 이미지에서 데이터를 다운로드하는 방법을 보여주는 가이드를 모아서 여러분만의 데이터셋을 만들 수 있도록 하는 겁니다.하지만 그러기 전에, 라벨을 만드는 방법을 여러 가지 다양한 방법으로 보여드리고 싶다. 왜냐하면 데이터 세트가 반드시 정규식 기반 접근방식같은 것이 될 필요는 없기 때문이다. 그것은 많은 다른 형태일 수 있다. 그래서 이걸 어떻게 하는지 보여드리기 위해서 MNIST 샘플을. MNIST는 손으로 그린 숫자의 그림이다. 단지 내가 당신에게 이 데이터셋을 만드는 다른 방법을 보여주고 싶기 때문이다.`
 
 ```python
 path = untar_data(URLs.MNIST_SAMPLE); path
