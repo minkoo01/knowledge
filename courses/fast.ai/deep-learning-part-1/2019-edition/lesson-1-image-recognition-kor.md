@@ -111,15 +111,17 @@ How to use notebooks and the materials well based on the last three years of exp
    - Don't worry if things are zipping along faster than you can do them. That's normal. <br>
    `일이 당신이 할 수 있는 것보다 더 빨리 진행되고 있는지 걱정하지 마세요. 그런 건 보통이에요.`
    - Don't try and stop and understand everything the first time. If you do understand everything the first time, good for you. But most people don't particularly as the lessons go on, they get faster and they get more difficult. <br>
-   `처음에 모든 것을 멈추고 이해하려고 하지 마라. 만약 네가 처음 모든 것을 이해한다면, 너에게 좋다. 그러나 대부분의 사람들은 특히 수업이 진행될수록 더 빨라지고 더 어려워진다.`
+   `처음부터 모든 것들을 이해하려고 하지 마라. 만약 여러분이 처음부터 모든 것을 이해한다면 좋겠지만, 대부분의 사람들은 특히 수업이 진행될수록 더 빨라지고 더 어려워진다.`
 
-So at this point, we've got our notebooks going. We're ready to start doing deep learning.
+So at this point, we've got our notebooks going. We're ready to start doing deep learning. <br>
+`그래서 이 시점에서, 우리는 우리의 notebook을 실행하고 있다. 우리는 deep learning을 시작할 준비가 되어 있다.`
 
 ### You can do deep learning [[4:31](https://youtu.be/BWWm4AzsdLk?t=271)]
 
 ![](../../../../images/fastai_p1_v3/lesson_1/1.png)
 
-The main thing that hopefully you're going to agree at the end of this is that you can do world-class practitioner level deep learning regardless of who you are.
+The main thing that hopefully you're going to agree at the end of this is that you can do world-class practitioner level deep learning regardless of who you are. <br>
+`끝에 가서 여러분이 동의하기를 바라는 가장 중요한 것은 여러분이 누구와 상관없이 세계적인 수준의 실무자 수준의 깊은 학습을 할 수 있다는 것이다.`
 
 Main places to be looking for things are:
 - [course-v3.fast.ai](http://course-v3.fast.ai/)
@@ -141,6 +143,7 @@ A little bit about why we should listen to Jeremy.
 ![](../../../../images/fastai_p1_v3/lesson_1/4.png)
 
 There is a lot as to how much people put into this. Jeremy knows a lot of people who work full-time on fast AI. Some folks whose do the two parts can spend a whole year doing it really intensively. Jeremy knows some folks watch the videos on double-speed and never do any homework and come at the end of it with a general sense of what's going on. So, there's lots of different ways you can do this.
+`이 일에 얼마나 많은 사람들이 투입하는지에 대해서는 많은 것이 있다. 제레미는 fast AI에 full-time으로 일하는 사람들을 많이 알고 있다. 두 부분을 하는 몇몇 사람들은 그것을 하는데 1년 전체를 쓸 수 있다. 제레미는 어떤 사람들이 비디오를 이중속도로 보고 어떤 숙제도 하지 않고 무슨 일이 일어나고 있는지에 대한 일반적인 감각으로 끝내는 것을 알고 있다. 그래서, 여러분이 이것을 할 수 있는 많은 다양한 방법들이 있다.`
 
 If you follow along with 10 hours a week or so approach for the 7 weeks, by the end, you will be able to:
 
@@ -217,7 +220,8 @@ What is fastai library? If you go to [docs.fast.ai](http://docs.fast.ai), this i
 
 Everything we are going to do is going to be using either fastai or [PyTorch](https://pytorch.org/) which fastai sits on top of. PyTorch is fast growing extremely popular library. It's a bit newer than TensorFlow, so in a lot of ways it's more modern than TensorFlow. We use it because we used to use TensorFlow a couple years ago and we found we can do a lot more, a lot more quickly with PyTorch.
 
-Currently fastai supports four applications:
+Currently fastai supports four applications: <br>
+`현재 fastai는 네 가지 애플리케이션을 지원한다.`
 
 1. Computer vision
 2. Natural language text
@@ -228,36 +232,51 @@ Currently fastai supports four applications:
 
 `import *` - If you are a Python software engineer, you probably feeling sick because this is something you've all been told to never ever do.
 
-There are very good reasons to not use `import *` in standard production code with most libraries. But things like MATLAB is the opposite. Everything is there for you all the time. You don't even have to import things a lot of the time. It's kind of funny - we've got these two extremes of how do I code. The scientific programming community has one way, and then software engineering community has the other. Both have really good reasons for doing things.
+There are very good reasons to not use `import *` in standard production code with most libraries. But things like MATLAB is the opposite. Everything is there for you all the time. You don't even have to import things a lot of the time. It's kind of funny - we've got these two extremes of how do I code. The scientific programming community has one way, and then software engineering community has the other. Both have really good reasons for doing things. <br>
+`대부분의 라이브러리들이 있는 표준 상용 코드에 'import *' 를 사용하지 않는 데는 그럴 만한 이유가 있다. 그러나 MATLAB와 같은 것들은 정반대다. 모든 것이 너를 위해 항상 있다. 필요한 것들을 많이 import할 필요도 없다. 좀 웃긴데- 어떻게 내가 코딩를 해야 하는지에 대한 두가지 극단적인 방법이 있다. 과학 프로그래밍 커뮤니티에는 한 가지 방법이 있고, 소프트웨어 엔지니어링 커뮤니티에는 다른 방법이 있다. 둘 다 일을 하는 데 정말 좋은 이유가 있다.`
 
-With the fastai library, we actually support both approaches. In Jupyter Notebook where you want to be able to quickly interactively try stuff out, you don't want to constantly going back up to the top and importing more stuff. You want to be able to use lots of tab complete and be very experimental, so `import *` is great. When you are building stuff in production, you can do the normal PEP8 style proper software engineering practices. This is a different style of coding. It's not that there are no rules in data science programming, the rules are different. When you're training models, the most important thing is to be able to interactively experiment quickly. So you will see we use a lot of different processes, styles, and stuff to what you are used to. But they are there for a reason and you'll learn about them over time.
+With the fastai library, we actually support both approaches. In Jupyter Notebook where you want to be able to quickly interactively try stuff out, you don't want to constantly going back up to the top and importing more stuff. You want to be able to use lots of tab complete and be very experimental, so `import *` is great. When you are building stuff in production, you can do the normal PEP8 style proper software engineering practices. This is a different style of coding. It's not that there are no rules in data science programming, the rules are different. When you're training models, the most important thing is to be able to interactively experiment quickly. So you will see we use a lot of different processes, styles, and stuff to what you are used to. But they are there for a reason and you'll learn about them over time. <br>
+`Fastai 라이브러리를 통해 우리는 실제로 두 가지 접근 방식을 모두 지원한다. 빨리 대화식으로 시험해 보고 싶은 Jupyter Notebook에서는, 끊임없이 위로 올라가서 더 필요한 것들을 import하고 싶어 하지 않는다. 탭 완료를 많이 사용할 수 있고 매우 실험적이기를 원하기 때문에 'import *'는 훌륭하다. 당신이 상용 제품을 만들 때, 당신은 일반적인 PEP8 스타일의 적절한 소프트웨어 엔지니어링 관행을 할 수 있다. 이것은 다른 스타일의 코딩이다. 데이터 과학 프로그래밍에 규칙이 없다는 것이 아니라 규칙이 다르다는 겁니다. 모델을 훈련할 때, 가장 중요한 것은 빠르게 상호작용적으로 실험할 수 있는 것이다. 그래서 우리는 여러분이 익숙한 것에 많은 다른 프로세스, 스타일, 그리고 그런 것들을 사용하는 것을 볼 수 있을 겁니다. 하지만 그들은 이유가 있어서 그곳에 있고 당신은 시간이 지남에 따라 그것에 대해 알게 될 것이다.`
 
-The other thing to mention is that the fastai library is designed in a very interesting modular way and when you do use `import *`, there's far less clobbering of things than you might expect. It's all explicitly designed to allow you to pull in things and use them quickly without having problems.
+The other thing to mention is that the fastai library is designed in a very interesting modular way and when you do use `import *`, there's far less clobbering of things than you might expect. It's all explicitly designed to allow you to pull in things and use them quickly without having problems. <br>
+`또 하나 언급해야 할 것은 이 FastAI 라이브러리에는 매우 흥미로운 모듈 방식으로 설계되어 있으며, 'import *'를 사용할 때 여러분이 예상하는 것보다 잡동사니들이 훨씬 적다는 점이다. 이 모든 것은 여러분이 문제를 일으키지 않고 빠르게 물건을 끌어다 쓸 수 있도록 명시적으로 고안된 것이다.`
 
 ## Looking at the data [[17:56](https://youtu.be/BWWm4AzsdLk?t=1076)]
 
-Two main places that we will be tending to get data from for the course:
+Two main places that we will be tending to get data from for the course: <br>
+`본 코스의 데이터를 얻기 위한 2가지 주요 장소:`
 
-1. Academic datasets
-    - Academic datasets are really important. They are really interesting. They are things where academics spend a lot of time curating and gathering a dataset so that they can show how well different kinds of approaches work with that data. The idea is they try to design datasets that are challenging in some way and require some kind of breakthrough to do them well.
-    - We are going to start with an academic dataset called the pet dataset.
+1. Academic datasets <br>
+`1. 학술 데이터 세트`
+    - Academic datasets are really important. They are really interesting. They are things where academics spend a lot of time curating and gathering a dataset so that they can show how well different kinds of approaches work with that data. The idea is they try to design datasets that are challenging in some way and require some kind of breakthrough to do them well. <br>
+    `학술 데이터 세트는 정말 중요하다. 그것들은 정말 흥미롭다. 이러한 것들은 학자들이 데이터셋을 조정하고 수집하는 데 많은 시간을 할애하여 서로 다른 종류의 접근방식이 그 데이터에 얼마나 잘 작용하는지 보여줄 수 있도록 하는 것이다. 그 아이디어는 그들이 어떤 면에서 도전적인 데이터셋을 설계하려고 하고 그것을 잘 하기 위해 어떤 종류의 돌파구가 필요한 데이터셋을 설계하려고 노력한다는 것이다.`
+    - We are going to start with an academic dataset called the pet dataset. <br>
+    `우리는 애완동물 데이터셋이라고 불리는 학문적 데이터셋으로 시작할 것이다.`
 2. Kaggle competition datasets
+`2. Kaggle competition 데이터 세트`
 
-Both types of datasets are interesting for us particularly because they provide strong baseline. That is to say you want to know if you are doing a good job. So with Kaggle datasets that come from a competition, you can actually submit your results to Kaggle and see how well you would have gone in that competition. If you can get in about the top 10%, then I'd say you are doing pretty well.
+Both types of datasets are interesting for us particularly because they provide strong baseline. That is to say you want to know if you are doing a good job. So with Kaggle datasets that come from a competition, you can actually submit your results to Kaggle and see how well you would have gone in that competition. If you can get in about the top 10%, then I'd say you are doing pretty well. <br>
+`두 종류의 데이터셋은 특히 강력한 기준선을 제공하기 때문에 우리에게 흥미롭다. 즉 일을 잘 하고 있는지 알고 싶다는 것이다. 따라서 competition에서 얻은 Kaggle 데이터 세트를 사용하여 실제로 결과를 Kaggle에 제출하고 해당 경쟁에서 얼마나 잘 나갔는지 확인할 수 있다. 만약 당신이 상위 10%에 들어갈 수 있다면, 나는 당신이 꽤 잘 하고 있다고 말할 것이다.`
 
-Academic datasets, academics write down in papers what the state of the art is so how well did they go with using models on that dataset. So this is what we are going to do. We are going to try to create models that get right up towards the top of Kaggle competitions, preferably in the top 10, not just top 10% or that meet or exceed academic state-of-the-art published results. So when you use an academic dataset, it's important to cite it. Here there's a link to the [Oxford-IIIT Pet Dataset paper](http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/parkhi12a.pdf) that it's from. You don't need to read that paper right now, but if you are interested in learning more about it and why it was created and how it was created, all the details are there.
 
-In this case, this is a pretty difficult challenge. The Pet dataset is going to ask us to distinguish between 37 different categories of dog breed and cat breed. So that's really hard. In fact, every course until this one, we've used a different dataset which is one where you just have to decide if something is a dog or a cat. So you've got a 50-50 chance right away and dogs and cats look really different. Or else lots of dog breeds and cat breeds look pretty much the same.
+Academic datasets, academics write down in papers what the state of the art is so how well did they go with using models on that dataset. So this is what we are going to do. We are going to try to create models that get right up towards the top of Kaggle competitions, preferably in the top 10, not just top 10% or that meet or exceed academic state-of-the-art published results. So when you use an academic dataset, it's important to cite it. Here there's a link to the [Oxford-IIIT Pet Dataset paper](http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/parkhi12a.pdf) that it's from. You don't need to read that paper right now, but if you are interested in learning more about it and why it was created and how it was created, all the details are there. <br>
+`학술 데이터셋, 학자들은 그 데이터셋에 모델을 얼마나 잘 사용했는지를 논문에서 기록한다. 이것이 우리가 할 일 입니다. 우리는 카글 대회, 특히 상위 10%가 아니라 상위 10위 안에 들거나 학술 최신 발표 결과를 충족시키거나 초과하는 모델을 만들 계획이다. 따라서 학술 자료 세트를 사용할 때는 인용하는 것이 중요하다. 여기 그것이 보낸 [Oxford-IIIT Pet Dataset paper](http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/parkhi12a.pdf)의 링크가 있다. 지금 당장 그 논문을 읽을 필요는 없지만, 그 논문에 대해 좀 더 자세히 알고, 왜 그것이 만들어졌고, 어떻게 만들어졌는지에 관심이 있다면, 모든 세부 사항은 거기에 있다.`
 
-So why have we changed the dataset? We've got to the point now where deep learning is so fast and so easy that the dogs versus cats problem which a few years ago was considered extremely difficult around 80% accuracy was the state of the art, it's now too easy. Our models were basically getting everything right all the time without any tuning and so there weren't really a lot of opportunities for me to show you how to do more sophisticated stuff. So we've picked a harder problem this year.
+In this case, this is a pretty difficult challenge. The Pet dataset is going to ask us to distinguish between 37 different categories of dog breed and cat breed. So that's really hard. In fact, every course until this one, we've used a different dataset which is one where you just have to decide if something is a dog or a cat. So you've got a 50-50 chance right away and dogs and cats look really different. Or else lots of dog breeds and cat breeds look pretty much the same. <br>
+`이 경우, 이것은 꽤 어려운 도전이다. 펫 데이터 세트는 우리에게 37개의 다른 종류의 개 품종과 고양이 품종을 구별할 것을 요구할 것이다. 그래서 그것은 정말 어렵다. 사실, 이 과정까지 우리는 다른 데이터 세트를 사용했는데, 이 데이터 세트는 어떤 것이 개인지, 아니면 고양이인지 결정해야 하는 데이터 세트였습니다. 50대 50의 확률로 개와 고양이는 정말 다르게 보인다. 아니면 많은 개 품종들과 고양이 품종들이 거의 똑같이 보인다.`
+
+So why have we changed the dataset? We've got to the point now where deep learning is so fast and so easy that the dogs versus cats problem which a few years ago was considered extremely difficult around 80% accuracy was the state of the art, it's now too easy. Our models were basically getting everything right all the time without any tuning and so there weren't really a lot of opportunities for me to show you how to do more sophisticated stuff. So we've picked a harder problem this year. <br>
+`그럼 왜 데이터 세트를 변경한 겁니까? 우리는 이제 깊이 있는 학습이 너무 빠르고 쉬워서 몇 년 전에 80%정확도 정도로 매우 어렵다고 여겨졌던 개 대 고양이 문제가 예술의 상태였고, 지금은 너무 쉽다. 저희 모델은 기본적으로 튜닝 없이 항상 모든 것을 제대로 해내고 있었고 그래서 여러분께 좀 더 정교한 것을 보여드릴 기회가 별로 없었답니다. 그래서 우리는 올해 더 어려운 문제를 골랐다.`
 
 [[20:51](https://youtu.be/BWWm4AzsdLk?t=1251)]
 
-This kind of thing where you have to distinguish between similar categories is called **fine grained classification** in the academic context.
+This kind of thing where you have to distinguish between similar categories is called **fine grained classification** in the academic context. <br>
+`이와 유사한 범주를 구분해야 하는 이런 종류의 것을 학문적 맥락에서 **fine grained 분류**라고 한다.`
 
 ### `untar_data`
 
-The first thing we have to do is download and extract the data that we want. We're going to be using this function called `untar_data` which will download it automatically and untar it. AWS has been kind enough to give us lots of space and bandwidth for these datasets so they'll download super quickly for you.
+The first thing we have to do is download and extract the data that we want. We're going to be using this function called `untar_data` which will download it automatically and untar it. AWS has been kind enough to give us lots of space and bandwidth for these datasets so they'll download super quickly for you. <br>
+`우리가 가장 먼저 해야 할 일은 우리가 원하는 데이터를 다운로드하고 압축해제하는 것이다. untar_data라는 이 기능을 이용해 자동 다운로드하고 untar 할 겁니다. AWS는 이러한 데이터셋을 위한 많은 공간과 대역폭을 제공하므로, 그들이 당신을 위해 매우 빠르게 다운로드될 것이다.`
 
 ```python
 path = untar_data(URLs.PETS); path
@@ -265,9 +284,11 @@ path = untar_data(URLs.PETS); path
 
 ### `help`
 
-The first question then would be how do I know what `untar_data` does. You could just type help and you will find out what module it came from (since we did `import *` you don't necessarily know that), what it does, and something you might not have seen before even if you are an experienced programmer is what exactly you pass to it. You're probably used to seeing the names: url, fname, dest, but you might not be used to seeing `Union[pathlib.Path, str]`. These bits are types and if you're used to typed programming language, you would be used to seeing them, but Python programmers are less used to it. But if you think about it, you don't actually know how to use a function unless you know what type each thing is that you're providing it. So we make sure that we give you that type information directly here in the help.
+The first question then would be how do I know what `untar_data` does. You could just type help and you will find out what module it came from (since we did `import *` you don't necessarily know that), what it does, and something you might not have seen before even if you are an experienced programmer is what exactly you pass to it. You're probably used to seeing the names: url, fname, dest, but you might not be used to seeing `Union[pathlib.Path, str]`. These bits are types and if you're used to typed programming language, you would be used to seeing them, but Python programmers are less used to it. But if you think about it, you don't actually know how to use a function unless you know what type each thing is that you're providing it. So we make sure that we give you that type information directly here in the help. <br>
+`그렇다면 첫 번째 질문은 'untar_data'가 무엇을 하는지 어떻게 알 것인가 하는 것이다. 당신은 단지 'help'를 타이핑하면 그것이 어떤 모듈에서 왔는지 알게 될 것이다. 당신은 아마도 url, fname, dest, 라는 이름들을 보는 데 익숙하겠지만, 'Union[pathlib.Path, str]'을 보는 데는 익숙하지 않을지도 모른다." 이런 비트들은 type이고 type형 프로그래밍 언어에 익숙하다면 보는 데 익숙하겠지만 Python 프로그래머들은 덜 익숙하다. 그러나 생각해 보면, 각각의 것이 어떤 유형인지, 즉 어떤 기능을 제공하는지를 알지 못하면 실제로 그 기능을 어떻게 사용하는지 알 수 없다. 그래서 우리는 여러분에게 이런 유형의 정보를 바로 여기 도움에 줄 수 있도록 한다.`
 
-In this case, `url` is a string, `fname` is either path or a string and defaults to nothing (`Union` means "either"). `dest` is either a string or a path and defaults to nothing.
+In this case, `url` is a string, `fname` is either path or a string and defaults to nothing (`Union` means "either"). `dest` is either a string or a path and defaults to nothing. <br>
+`이 경우 url은 문자열이고 fname은 경로 또는 문자열이며 기본값은 없다.('Union'은 둘 중에 하나를 의미) 'dest'는 문자열이나 경로로 기본값은 없는 것으로 되어 있다.`
 
 ```python
 help(untar_data)
@@ -281,9 +302,11 @@ untar_data(url:str, fname:Union[pathlib.Path, str]=None, dest:Union[pathlib.Path
     Download `url` if doesn't exist to `fname` and un-tgz to folder `dest`
 ```
 
-We'll learn more shortly about how to get more documentation about the details of this, but for now, we can see we don't have to pass in a file name `fname` or a destination `dest`, it'll figure them out for us from the URL.
+We'll learn more shortly about how to get more documentation about the details of this, but for now, we can see we don't have to pass in a file name `fname` or a destination `dest`, it'll figure them out for us from the URL. <br>
+`자세한 내용은 잠시 후 자세히 알아보겠지만, 현재로서는 파일 이름이나 목적지 'dest'를 입력할 필요가 없다는 것을 알 수 있으며, URL에서 확인할 수 있을 것이다.`
 
-For all the datasets we'll be using in the course, we already have constants defined for all of them (i.e: `URLs.PETS`). So in this [URLs](https://github.com/fastai/fastai/blob/master/fastai/datasets.py) class, you can see where it's going to grab it from.
+For all the datasets we'll be using in the course, we already have constants defined for all of them (i.e: `URLs.PETS`). So in this [URLs](https://github.com/fastai/fastai/blob/master/fastai/datasets.py) class, you can see where it's going to grab it from. <br>
+`본 코스에서 사용할 모든 데이터 세트에 대해 이미 모든 데이터에 대해 정의된 상수가 있다(예: 'URLs'.PETS). [URLs](https://github.com/fastai/fastai/blob/master/fastai/datasets.py) class 에서, 이것들을 볼 수 있다.
 
 `untar_data` will download that to some convenient path and untar it for us and it will then return the value of path.
 
