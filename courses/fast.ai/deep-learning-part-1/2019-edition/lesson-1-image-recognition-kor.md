@@ -1,7 +1,7 @@
 # Lesson 1 - Image Recognition
 
 _These are my personal notes from fast.ai Live (the new International Fellowship programme) course and will continue to be updated and improved if I find anything useful and relevant while I continue to review the course to study much more in-depth. Thanks for reading and happy learning!_ <br>
-`_이것들은 fast.ai 라이브 (새로운 국제 펠로우쉽 프로그램) 코스의 내 개인적인 노트입니다. 그리고 만약 내가 훨씬 더 심층적으로 공부하기 위해 과정을 계속 검토하는 동안 유용하고 적절한 것을 발견한다면 계속해서 업데이트되고 개선될 것입니다. 독서와 행복한 배움에 감사드립니다!_`
+`이것들은 fast.ai 라이브 (새로운 국제 펠로우쉽 프로그램) 코스의 내 개인적인 노트입니다. 그리고 만약 내가 훨씬 더 심층적으로 공부하기 위해 과정을 계속 검토하는 동안 유용하고 적절한 것을 발견한다면 계속해서 업데이트되고 개선될 것입니다. 독서와 행복한 배움에 감사드립니다!`
 
 Live date: 23 Oct 2018, GMT+8
 
@@ -98,8 +98,10 @@ Four shortcuts:
 [[2:45](https://youtu.be/BWWm4AzsdLk?t=165)]
 
 Jupyter Notebook is a really interesting device for data scientists because it lets you run interactive experiments and give you not just a static piece of information but something you can interactively experiment with.
+`Jupyter Notebook은 데이터 과학자들에게 정말 흥미로운 장치입니다. 왜냐하면 그것은 여러분이 대화형 실험을 할 수 있게 해주고, 단지 정적인 정보들이 아닌 여러분이 대화식으로 실험할 수 있는 어떤 것을 제공하기 때문입니다.`
 
 How to use notebooks and the materials well based on the last three years of experience:
+`지난 3년간의 경험을 바탕으로 Notebook과 자료를 잘 사용하는 방법`
 
 1. Just watch a lesson end to end.
    - Don't try to follow along because it's not really designed to go the speed where you can follow along. It's designed to be something where you just take in the information, you get a general sense of all the pieces, how it all fits together.
